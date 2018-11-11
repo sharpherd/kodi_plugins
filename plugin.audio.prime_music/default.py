@@ -78,7 +78,7 @@ if addon.getSetting('ssl_verif') == 'true' and hasattr(ssl, '_create_unverified_
 
 def index():
     loginResult = login()
-    if loginResult=="prime":
+    if loginResult=="prime" or (loginResult=="noprime" and addon.getSetting("ignorePrime")=="true"):
         addDir(translation(30002), urlMain+"/s/ref=dmm_pr_bbx_album?ie=UTF8&bbn=5686557031&rh=i%3Adigital-music-album", 'listAlbums', "")
         addDir(translation(30003), urlMain+"/s/ref=s9_rbpl_bw_srch?__mk_de_DE=%C5M%C5Z%D5%D1&rh=i%3Adigital-music-playlist%2Cn%3A5686557031%2Cp_n_format_browse-bin%3A5686558031&sort=featured-rank", 'listAlbums', "")
         addDir(translation(30004), "", 'listGenres', "")

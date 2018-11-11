@@ -52,6 +52,7 @@
   <string id="30119">Default view ID for albums</string>
   <string id="30120">Default view ID for playlists</string>
   <string id="30121">Forced views</string>
+  <string id="30122">Do not check Prime status (Amazon Music Unlimited account)</string>
   <string id="30201">General</string>
   <string id="30203">Advanced</string>
   <string id="30210">Credentials</string>
